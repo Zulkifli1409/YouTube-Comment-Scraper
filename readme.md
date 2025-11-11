@@ -130,10 +130,8 @@ Cara cepat menemukan path Edge di PowerShell:
 Lalu edit `main.py` dan pastikan dekorator `@browser(...)` menyertakan:
 
 ```python
-edge_executable_path=r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+chrome_executable_path=r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
 ```
-
-Sesuaikan string di atas jika path pada mesin Anda berbeda. Menyertakan `edge_executable_path` membuat intent jelas (Edge) sekaligus menjaga kompatibilitas jika library masih menerima argumen bernama `chrome_executable_path`.
 
 ---
 
@@ -403,7 +401,7 @@ commentViewModel = {
 **A:** Edit path browser di line 355:
 
 ```python
-edge_executable_path=r"C:\path\to\your\msedge.exe"
+chrome_executable_path=r"C:\path\to\your\msedge.exe"
 ```
 
 ### Q: Support untuk YouTube Shorts?

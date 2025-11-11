@@ -481,14 +481,14 @@ def save_outputs(result, output_folder):
         'summary': summary_path
     }
 
-
 @browser(
-    edge_executable_path=r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+    chrome_executable_path=r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
     block_images_and_css=False,
     wait_for_complete_page_load=True,
     headless=False,
     reuse_driver=True,
 )
+
 def scrape_youtube_comments(driver: Driver, data):
     """Scraper YouTube comments yang enhanced"""
     url = data["url"]
